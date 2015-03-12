@@ -28,6 +28,15 @@ $(document).ready(function(){
 	var new7 = [363,260,294,265,294,137,380,115];
 	var new8 = [408,557,320,516,329,405,380,467];
 
+	var newnew1 = [197,537,80,383,112,255,224,448];
+	var newnew2 = [198.5,261.5,126.5,369.5,99.5,261.5,189.5,162.5];
+	var newnew3 = [198.5,261.5,306.5,261.5,279.5,180.5,189.5,162.5];
+	var newnew4 = [197,537,288,584,288,451,224,448];
+	var newnew5 = [396.5,513.5,495.5,432.5,459.5,297.5,378.5,459.5];
+	var newnew6 = [351.5,243.5,495.5,432.5,459.5,297.5,360.5,126.5];
+	var newnew7 = [351.5,243.5,306.5,261.5,279.5,180.5,360.5,126.5];
+	var newnew8 = [396.5,513.5,324.5,531.5,324.5,405.5,378.5,459.5];
+
 	var polygon1 = s.polygon(poly1);
 	polygon1.attr({
 		id:"polygon1",
@@ -70,13 +79,13 @@ $(document).ready(function(){
 	});
 
 
-	polygon1.animate({"points":new1},5000,mina.linear);
-	polygon2.animate({"points":new2},5000,mina.linear);
-	polygon3.animate({"points":new3},5000,mina.linear);
-	polygon4.animate({"points":new4},5000,mina.linear);
-	polygon5.animate({"points":new5},5000,mina.linear);
-	polygon6.animate({"points":new6},5000,mina.linear);
-	polygon7.animate({"points":new7},5000,mina.linear);
-	polygon8.animate({"points":new8},5000,mina.linear);
+	polygon1.animate({"points":new1},5000,mina.linear,animate({"points":newnew1},5000,mina.linear));
+	polygon2.animate({"points":new2},5000,mina.linear,animate({"points":newnew2},5000,mina.linear));
+	polygon3.animate({"points":new3},5000,mina.linear,animate({"points":newnew3},5000,mina.linear));
+	polygon4.animate({"points":new4},5000,mina.linear,animate({"points":newnew4},5000,mina.linear));
+	polygon5.animate({"points":new5},5000,mina.linear,animate({"points":newnew5},5000,mina.linear));
+	polygon6.animate({"points":new6},5000,mina.linear,animate({"points":newnew6},5000,mina.linear));
+	polygon7.animate({"points":new7},5000,mina.linear,animate({"points":newnew7},5000,mina.linear));
+	polygon8.animate({"points":new8},5000,mina.linear,animate({"points":newnew8},5000,mina.linear));
 
 });
