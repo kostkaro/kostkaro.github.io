@@ -12,11 +12,11 @@ $(document).ready(function(){
 
 	var polyPoints = [224,506,130,367,162,239,252,417];
 	var newPoints = [100,200,150,250,50,50,200,150];
-	var polygon = s.poylgon(polyPoints);
-	polygon.attr({
+	var polygon1 = s.polygon(polyPoints);
+	polygon1.attr({
 		id:"polygon",
 		fill:"#55555"
 	});
-	polygon.animate({"points":newPoints},5000,mina.linear);
+	polygon1.animate({"points":newPoints},5000,mina.linear);
 
 });
