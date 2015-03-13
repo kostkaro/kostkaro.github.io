@@ -79,13 +79,13 @@ $(document).ready(function(){
 	});
 
 
-	polygon1.animate({"points":new1},5000,mina.linear,animate({"points":newnew1},5000,mina.linear));
-	polygon2.animate({"points":new2},5000,mina.linear,animate({"points":newnew2},5000,mina.linear));
-	polygon3.animate({"points":new3},5000,mina.linear,animate({"points":newnew3},5000,mina.linear));
-	polygon4.animate({"points":new4},5000,mina.linear,animate({"points":newnew4},5000,mina.linear));
-	polygon5.animate({"points":new5},5000,mina.linear,animate({"points":newnew5},5000,mina.linear));
-	polygon6.animate({"points":new6},5000,mina.linear,animate({"points":newnew6},5000,mina.linear));
-	polygon7.animate({"points":new7},5000,mina.linear,animate({"points":newnew7},5000,mina.linear));
-	polygon8.animate({"points":new8},5000,mina.linear,animate({"points":newnew8},5000,mina.linear));
+	polygon1.animate({"points":new1},5000,mina.linear);
+	polygon2.animate({"points":new2},5000,mina.linear);
+	polygon3.animate({"points":new3},5000,mina.linear);
+	polygon4.animate({"points":new4},5000,mina.linear);
+	polygon5.animate({"points":new5},5000,mina.linear);
+	polygon6.animate({"points":new6},5000,mina.linear);
+	polygon7.animate({"points":new7},5000,mina.linear);
+	polygon8.animate({"points":new8},5000,mina.linear);
 
 });
