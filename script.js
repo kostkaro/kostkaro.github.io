@@ -28,7 +28,7 @@ $(document).ready(function(){
 	var new7 = [363,260,294,265,294,137,380,115];
 	var new8 = [408,557,320,516,329,405,380,467];
 
-	var newnew1 = [197,537,80,383,112,255,224,448];
+	var newnew1 = [197,537,126,369,99,261,224,448];
 	var newnew2 = [198.5,261.5,126.5,369.5,99.5,261.5,189.5,162.5];
 	var newnew3 = [198.5,261.5,306.5,261.5,279.5,180.5,189.5,162.5];
 	var newnew4 = [197,537,288,584,288,451,224,448];
@@ -60,12 +60,12 @@ $(document).ready(function(){
 	var polygon5 = s.polygon(poly5);
 	polygon5.attr({
 		id:"polygon5",
-		fill:"#48ADE2"
+		fill:"#73CBF3"
 	});
 	var polygon6 = s.polygon(poly6);
 	polygon6.attr({
 		id:"polygon6",
-		fill:"#73CBF3"
+		fill:"#48ADE2"
 	});
 	var polygon7 = s.polygon(poly7);
 	polygon7.attr({
@@ -77,15 +77,25 @@ $(document).ready(function(){
 		id:"polygon8",
 		fill:"#48ADE2"
 	});
-
-
-	polygon1.animate({"points":new1},5000,mina.linear);
-	polygon2.animate({"points":new2},5000,mina.linear);
-	polygon3.animate({"points":new3},5000,mina.linear);
-	polygon4.animate({"points":new4},5000,mina.linear);
-	polygon5.animate({"points":new5},5000,mina.linear);
-	polygon6.animate({"points":new6},5000,mina.linear);
-	polygon7.animate({"points":new7},5000,mina.linear);
-	polygon8.animate({"points":new8},5000,mina.linear);
-
+	var anim1 = function(){
+		polygon1.animate({"points":new1},10000,mina.linear);
+		polygon2.animate({"points":new2},10000,mina.linear);
+		polygon3.animate({"points":new3},10000,mina.linear);
+		polygon4.animate({"points":new4},10000,mina.linear);
+		polygon5.animate({"points":new5},10000,mina.linear);
+		polygon6.animate({"points":new6},10000,mina.linear);
+		polygon7.animate({"points":new7},10000,mina.linear);
+		polygon8.animate({"points":new8},10000,mina.linear,anim2);
+	};
+	var anim2 = function(){
+		polygon1.animate({"points":newnew1},10000,mina.linear);
+		polygon2.animate({"points":newnew2},10000,mina.linear);
+		polygon3.animate({"points":newnew3},10000,mina.linear);
+		polygon4.animate({"points":newnew4},10000,mina.linear);
+		polygon5.animate({"points":newnew5},10000,mina.linear);
+		polygon6.animate({"points":newnew6},10000,mina.linear);
+		polygon7.animate({"points":newnew7},10000,mina.linear);
+		polygon8.animate({"points":newnew8},10000,mina.linear,anim1);
+	};
+	anim1();
 });
